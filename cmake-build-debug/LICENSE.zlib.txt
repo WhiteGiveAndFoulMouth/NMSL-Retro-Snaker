@@ -31,5 +31,5 @@ warranty of any kind.  The library has been entirely written by Jean-loup
 Gailly and Mark Adler; it does not include third-party code.
 
 If you redistribute modified sources, we would appreciate that you include in
-the file ChangeLog history information documenting your changes.  Please read_async
+the file ChangeLog history information documenting your changes.  Please read
 the FAQ for more information on the distribution of modified source versions.
