@@ -16,5 +16,5 @@ set(SOURCE_FILE main.cpp)
 
 set(LINK_LIBS mingw32 SDL2main SDL2 SDL2_image)
 
-add_executable(NMSL-Retro-Snaker main.cpp ${SOURCE_FILE})
+add_executable(NMSL-Retro-Snaker ${SOURCE_FILE})
 target_link_libraries(NMSL-Retro-Snaker ${LINK_LIBS})
