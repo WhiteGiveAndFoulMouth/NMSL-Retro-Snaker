@@ -1,0 +1,4 @@
+"D:\CLion 2018.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\git\NMSL-Retro-Snaker
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/git/NMSL-Retro-Snaker/cmake-build-debug

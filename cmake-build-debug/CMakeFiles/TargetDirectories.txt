@@ -1,0 +1,3 @@
+D:/git/NMSL-Retro-Snaker/cmake-build-debug/CMakeFiles/NMSL-Retro-Snaker.dir
+D:/git/NMSL-Retro-Snaker/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/git/NMSL-Retro-Snaker/cmake-build-debug/CMakeFiles/rebuild_cache.dir
