@@ -58,7 +58,7 @@ The same holds for its supporting scripts (config.guess, config.sub,
 ltmain.sh).  Another support script, install-sh, is copyright by X Consortium
 but is also freely distributable.
 
-The IJG distribution formerly included code to read_async and write GIF files.
+The IJG distribution formerly included code to read and write GIF files.
 To avoid entanglement with the Unisys LZW patent (now expired), GIF reading
 support has been removed altogether, and the GIF writer has been simplified
 to produce "uncompressed GIFs".  This technique does not use the LZW
