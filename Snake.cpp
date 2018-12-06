@@ -11,6 +11,7 @@ void Snake::increse_length(){
     if(m_incresed)
         return;
     m_snake.emplace_back(m_snake.back().first,m_snake.back().second);
+    m_incresed = true;
 }
 
 void Snake::set_direction(Direction direction){
