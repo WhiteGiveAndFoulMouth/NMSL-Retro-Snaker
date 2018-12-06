@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/git/NMSL-Retro-Snaker/Map.cpp">
+			<Option target="NMSL-Retro-Snaker"/>
+		</Unit>
+		<Unit filename="D:/git/NMSL-Retro-Snaker/Map.h">
+			<Option target="NMSL-Retro-Snaker"/>
+		</Unit>
 		<Unit filename="D:/git/NMSL-Retro-Snaker/main.cpp">
 			<Option target="NMSL-Retro-Snaker"/>
 		</Unit>

@@ -70,7 +70,7 @@ CMAKE_BINARY_DIR = D:\git\NMSL-Retro-Snaker\cmake-build-debug
 CMakeFiles/NMSL-Retro-Snaker.dir/all:
 	$(MAKE) -f CMakeFiles\NMSL-Retro-Snaker.dir\build.make CMakeFiles/NMSL-Retro-Snaker.dir/depend
 	$(MAKE) -f CMakeFiles\NMSL-Retro-Snaker.dir\build.make CMakeFiles/NMSL-Retro-Snaker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\git\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target NMSL-Retro-Snaker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\git\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target NMSL-Retro-Snaker"
 .PHONY : CMakeFiles/NMSL-Retro-Snaker.dir/all
 
 # Include target in all.
@@ -80,7 +80,7 @@ all: CMakeFiles/NMSL-Retro-Snaker.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/NMSL-Retro-Snaker.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\git\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\git\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles 3
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/NMSL-Retro-Snaker.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\git\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/NMSL-Retro-Snaker.dir/rule
