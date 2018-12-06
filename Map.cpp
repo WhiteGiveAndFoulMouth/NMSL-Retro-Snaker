@@ -4,7 +4,7 @@ void Map::set(int x,int y,TileType tile_type)noexcept{
     m_tiles[x][y] = tile_type;
 }
 
-void Map::draw(const SDL_Renderer *renderer)const noexcept{
+void Map::draw(SDL_Renderer *renderer)const noexcept{
     SDL_Rect rect;
     rect.w = TILE_SIZE;
     rect.h = TILE_SIZE;
@@ -19,7 +19,7 @@ void Map::draw(const SDL_Renderer *renderer)const noexcept{
                 //that is not suitable for this
                 rect.x = TILE_SIZE * x;
                 rect.y = TILE_SIZE * y;
-                SDLL_SetRenderDrawColor(
+                SDL_SetRenderDrawColor(
                     renderer,
                     WALL_COLOR_RED,
                     WALL_COLOR_GREEN,

@@ -28,7 +28,7 @@ public:
     
     void set(int x,int y,TileType tile_type)noexcept;
     
-    void draw(const SDL_Renderer *render)const noexcept;//render the map to the screen
+    void draw(SDL_Renderer *render)const noexcept;//render the map to the screen
 protected:
 private:
     Map() = default;

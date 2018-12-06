@@ -1,6 +1,7 @@
 #include <iostream>
 #include <SDL2/SDL.h>
-#include <Config.h>
+#include "Config.h"
+#include "Map.h"
 
 using namespace std;
 
@@ -14,6 +15,11 @@ int main(int argc,char *argv[]){
             MAP_WIDTH * TILE_SIZE,MAP_HEIGHT * TILE_SIZE,
             SDL_WINDOW_SHOWN);
     SDL_Renderer *renderer = SDL_CreateRenderer(window,-1,SDL_RENDERER_ACCELERATED|SDL_RENDERER_PRESENTVSYNC);//use hardware and enable the present vsync
+
+    int dx = 0;
+    int dy = 0;
+
+    int frame_count = 0;
 
     bool is_quit = false;
     SDL_Event event;
@@ -45,7 +51,24 @@ int main(int argc,char *argv[]){
                     break;
             }
         }
-        //draw sth here
+
+
+        if(frame_count == 10){
+            frame_count = 0;
+            Map::instance().set(dx,dy,TileType::air);
+            if(++dx == MAP_WIDTH){
+                dx = 0;
+                if(++dy == MAP_HEIGHT){
+                    dy = 0;
+                }
+            }
+            Map::instance().set(dx,dy,TileType::wall);
+        }
+
+        ++frame_count;
+
+        Map::instance().draw(renderer);
+
         SDL_RenderPresent(renderer);
     }
 
