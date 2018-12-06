@@ -2,6 +2,7 @@
 #include <SDL2/SDL.h>
 #include "Config.h"
 #include "Map.h"
+#include "Snake.h"
 
 using namespace std;
 
@@ -16,6 +17,8 @@ int main(int argc,char *argv[]){
             SDL_WINDOW_SHOWN);
     SDL_Renderer *renderer = SDL_CreateRenderer(window,-1,SDL_RENDERER_ACCELERATED|SDL_RENDERER_PRESENTVSYNC);//use hardware and enable the present vsync
 
+    Snake snake(MAP_WIDTH >> 1,MAP_HEIGHT >> 1);//center and forward right
+    
     bool is_quit = false;
     SDL_Event event;
     while(!is_quit){
@@ -30,15 +33,14 @@ int main(int argc,char *argv[]){
                     break;
                 case SDL_KEYDOWN:
                     if(event.key.keysym.scancode == SDL_SCANCODE_UP){//up arrow
-                        cout<<"up"<<endl;
+                        snake.set_direction(Snake::Direction::up);
                     }else if(event.key.keysym.scancode == SDL_SCANCODE_LEFT){//left arrow
-                        cout<<"left"<<endl;
+                        snake.set_direction(Snake::Direction::left);
                     }else if(event.key.keysym.scancode == SDL_SCANCODE_RIGHT){//right arrow
-                        cout<<"right"<<endl;
+                        snake.set_direction(Snake::Direction::right);
                     }else if(event.key.keysym.scancode == SDL_SCANCODE_DOWN){//down arrow
-                        cout<<"down"<<endl;
+                        snake.set_direction(Snake::Direction::down);
                     }else if(event.key.keysym.scancode == SDL_SCANCODE_ESCAPE){//esc
-                        cout<<"esc"<<endl;
                         is_quit = true;
                     }
                     break;
@@ -47,7 +49,9 @@ int main(int argc,char *argv[]){
             }
         }
 
-
+        if(snake.update()){//died
+            is_quit = true;
+        }
 
         Map::instance().draw(renderer);
 
