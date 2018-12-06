@@ -1,5 +1,6 @@
 #include <iostream>
 #include <SDL2/SDL.h>
+#include <Config.h>
 
 using namespace std;
 
@@ -10,7 +11,7 @@ int main(int argc,char *argv[]){
             "NMSL-Retro-Snaker",
             SDL_WINDOWPOS_UNDEFINED,
             SDL_WINDOWPOS_UNDEFINED,
-            640,320,
+            MAP_WIDTH * TILE_SIZE,MAP_HEIGHT * TILE_SIZE,
             SDL_WINDOW_SHOWN);
     SDL_Renderer *renderer = SDL_CreateRenderer(window,-1,SDL_RENDERER_ACCELERATED|SDL_RENDERER_PRESENTVSYNC);//use hardware and enable the present vsync
 
