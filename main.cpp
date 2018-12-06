@@ -17,8 +17,10 @@ int main(int argc,char *argv[]){
             SDL_WINDOW_SHOWN);
     SDL_Renderer *renderer = SDL_CreateRenderer(window,-1,SDL_RENDERER_ACCELERATED|SDL_RENDERER_PRESENTVSYNC);//use hardware and enable the present vsync
 
-    Snake snake(MAP_WIDTH >> 1,MAP_HEIGHT >> 1);//center and forward right
-    
+    Snake snake(MAP_WIDTH >> 1,MAP_HEIGHT >> 1,Snake::Direction::right);//center and forward right
+
+    int frame_count = 0;
+
     bool is_quit = false;
     SDL_Event event;
     while(!is_quit){
@@ -42,6 +44,8 @@ int main(int argc,char *argv[]){
                         snake.set_direction(Snake::Direction::down);
                     }else if(event.key.keysym.scancode == SDL_SCANCODE_ESCAPE){//esc
                         is_quit = true;
+                    }else if(event.key.keysym.scancode == SDL_SCANCODE_SPACE){
+                        snake.increse_length();
                     }
                     break;
                 default:
@@ -49,9 +53,13 @@ int main(int argc,char *argv[]){
             }
         }
 
-        if(snake.update()){//died
-            is_quit = true;
+        if(frame_count == 10){
+            frame_count = 0;
+            if(snake.update()){//died
+                is_quit = true;
+            }
         }
+        ++frame_count;
 
         Map::instance().draw(renderer);
 
