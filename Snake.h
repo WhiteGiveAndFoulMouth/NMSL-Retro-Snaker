@@ -1,6 +1,7 @@
 #ifndef _SNAKE_H_
 #define _SNAKE_H_
 
+#include <list>
 #include "Map.h"
 
 class Snake{
@@ -12,8 +13,9 @@ public:
         down
     };
     explicit Snake(int x,int y,Direction direction = Direction::right)
-        :m_direction(direction){
-        m_snake.emplace_back(x,y);
+        :m_incresed(false),
+         m_direction(direction){
+         m_snake.emplace_back(x,y);
     }
     Snake(const Snake &) = delete;
     Snake(Snake &&) = delete;
@@ -30,6 +32,7 @@ public:
     bool update(); //return true if died
 protected:
 private:
+    bool m_incresed;
     Direction m_direction;
     std::list<std::pair<int,int>> m_snake;
     
