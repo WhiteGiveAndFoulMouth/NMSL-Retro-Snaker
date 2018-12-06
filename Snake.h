@@ -14,7 +14,8 @@ public:
     };
     explicit Snake(int x,int y,Direction direction = Direction::right)
         :m_incresed(false),
-         m_direction(direction){
+         m_now_direction(direction),
+         m_last_direction(direction){
          m_snake.emplace_back(x,y);
     }
     Snake(const Snake &) = delete;
@@ -33,7 +34,7 @@ public:
 protected:
 private:
     bool m_incresed;
-    Direction m_direction;
+    Direction m_now_direction,m_last_direction;
     std::list<std::pair<int,int>> m_snake;
     
 };

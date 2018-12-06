@@ -14,19 +14,22 @@ void Snake::increse_length(){
 }
 
 void Snake::set_direction(Direction direction){
-    if(m_direction == Direction::left && direction == Direction::right) return;
-    if(m_direction == Direction::right && direction == Direction::left) return;
-    if(m_direction == Direction::up && direction == Direction::down) return;
-    if(m_direction == Direction::down && direction == Direction::up) return;
-    m_direction = direction;
+    m_now_direction = direction;
 }
 
 bool Snake::update(){
     m_incresed = false;
 
+    if(m_now_direction == Direction::left && m_last_direction == Direction::right)m_now_direction = Direction::right;
+    if(m_now_direction == Direction::right && m_last_direction == Direction::left)m_now_direction = Direction::left;
+    if(m_now_direction == Direction::up && m_last_direction == Direction::down)m_now_direction = Direction::down;
+    if(m_now_direction == Direction::down && m_last_direction == Direction::up)m_now_direction = Direction::up;
+
+    m_last_direction = m_now_direction;
+
     int x = m_snake.front().first;
     int y = m_snake.front().second;
-    switch(m_direction){
+    switch(m_now_direction){
         case Direction::left:
             x -= 1;
             break;
