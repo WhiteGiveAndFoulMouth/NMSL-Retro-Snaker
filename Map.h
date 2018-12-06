@@ -9,7 +9,7 @@ enum class TileType{
     air,
     wall,
     snake,
-    //snake_head //disabled
+    snake_head,
     fruit
 };
 
@@ -27,6 +27,7 @@ public:
     Map &operator=(Map &&) = delete;//disable move
     
     void set(int x,int y,TileType tile_type)noexcept;
+    TileType get(int x,int y)const noexcept;
     
     void draw(SDL_Renderer *render)const noexcept;//render the map to the screen
 protected:

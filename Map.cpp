@@ -4,6 +4,10 @@ void Map::set(int x,int y,TileType tile_type)noexcept{
     m_tiles[x][y] = tile_type;
 }
 
+TileType Map::get(int x,int y)const noexcept{
+    return m_tiles[x][y];
+}
+
 void Map::draw(SDL_Renderer *renderer)const noexcept{
     SDL_Rect rect;
     rect.w = TILE_SIZE;
@@ -11,14 +15,9 @@ void Map::draw(SDL_Renderer *renderer)const noexcept{
     for(int x = 0;x < MAP_WIDTH; ++x){
         for(int y = 0;y < MAP_HEIGHT; ++y){
             if(m_tiles[x][y] == TileType::air) continue;
+            rect.x = TILE_SIZE * x;
+            rect.y = TILE_SIZE * y;
             if(m_tiles[x][y] == TileType::wall){
-                //too many draw calls
-                //some of draw calls can be merged to one
-                //why not SDL_RenderFillRects?
-                //it need another way to manager data
-                //that is not suitable for this
-                rect.x = TILE_SIZE * x;
-                rect.y = TILE_SIZE * y;
                 SDL_SetRenderDrawColor(
                     renderer,
                     WALL_COLOR_RED,
@@ -27,8 +26,23 @@ void Map::draw(SDL_Renderer *renderer)const noexcept{
                     255);
                 SDL_RenderFillRect(renderer,&rect);
             }
+            if(m_tiles[x][y] == TileType::snake_head){
+                SDL_SetRenderDrawColor(
+                    renderer,
+                    SNAKE_HEAD_COLOR_RED,
+                    SNAKE_HEAD_COLOR_GREEN,
+                    SNAKE_HEAD_COLOR_BLUE,
+                    255);
+                SDL_RenderFillRect(renderer,&rect);
+            }
             if(m_tiles[x][y] == TileType::snake){
-                
+                SDL_SetRenderDrawColor(
+                    renderer,
+                    SNAKE_COLOR_RED,
+                    SNAKE_COLOR_GREEN,
+                    SNAKE_COLOR_BLUE,
+                    255);
+                SDL_RenderFillRect(renderer,&rect);
             }
             if(m_tiles[x][y] == TileType::fruit){
                 
