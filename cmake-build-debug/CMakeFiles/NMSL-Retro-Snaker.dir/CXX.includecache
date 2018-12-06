@@ -602,6 +602,8 @@ close_code.h
 
 .././SDL2-2.0.9/x86_64-w64-mingw32/include/SDL2/close_code.h
 
+D:/git/NMSL-Retro-Snaker/Config.h
+
 D:/git/NMSL-Retro-Snaker/Map.h
 array
 -
@@ -621,4 +623,16 @@ list
 -
 Map.h
 D:/git/NMSL-Retro-Snaker/Map.h
+
+D:/git/NMSL-Retro-Snaker/main.cpp
+iostream
+-
+SDL2/SDL.h
+-
+Config.h
+D:/git/NMSL-Retro-Snaker/Config.h
+Map.h
+D:/git/NMSL-Retro-Snaker/Map.h
+Snake.h
+D:/git/NMSL-Retro-Snaker/Snake.h
 
