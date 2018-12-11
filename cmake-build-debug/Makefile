@@ -149,6 +149,33 @@ Map.cpp.s:
 	$(MAKE) -f CMakeFiles\NMSL-Retro-Snaker.dir\build.make CMakeFiles/NMSL-Retro-Snaker.dir/Map.cpp.s
 .PHONY : Map.cpp.s
 
+Snake.obj: Snake.cpp.obj
+
+.PHONY : Snake.obj
+
+# target to build an object file
+Snake.cpp.obj:
+	$(MAKE) -f CMakeFiles\NMSL-Retro-Snaker.dir\build.make CMakeFiles/NMSL-Retro-Snaker.dir/Snake.cpp.obj
+.PHONY : Snake.cpp.obj
+
+Snake.i: Snake.cpp.i
+
+.PHONY : Snake.i
+
+# target to preprocess a source file
+Snake.cpp.i:
+	$(MAKE) -f CMakeFiles\NMSL-Retro-Snaker.dir\build.make CMakeFiles/NMSL-Retro-Snaker.dir/Snake.cpp.i
+.PHONY : Snake.cpp.i
+
+Snake.s: Snake.cpp.s
+
+.PHONY : Snake.s
+
+# target to generate assembly for a file
+Snake.cpp.s:
+	$(MAKE) -f CMakeFiles\NMSL-Retro-Snaker.dir\build.make CMakeFiles/NMSL-Retro-Snaker.dir/Snake.cpp.s
+.PHONY : Snake.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -188,6 +215,9 @@ help:
 	@echo ... Map.obj
 	@echo ... Map.i
 	@echo ... Map.s
+	@echo ... Snake.obj
+	@echo ... Snake.i
+	@echo ... Snake.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

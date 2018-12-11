@@ -13,7 +13,8 @@ set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -Wall -g -std=c++17")
 set(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS}  -Wall -O2 -std=c++17")
 
 set(SOURCE_FILE
-        map.cpp
+        Map.cpp
+        Snake.cpp
         main.cpp)
 
 set(LINK_LIBS mingw32 SDL2main SDL2 SDL2_image)

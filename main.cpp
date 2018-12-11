@@ -2,6 +2,7 @@
 #include <SDL2/SDL.h>
 #include "Config.h"
 #include "Map.h"
+#include "Snake.h"
 
 using namespace std;
 
@@ -16,8 +17,7 @@ int main(int argc,char *argv[]){
             SDL_WINDOW_SHOWN);
     SDL_Renderer *renderer = SDL_CreateRenderer(window,-1,SDL_RENDERER_ACCELERATED|SDL_RENDERER_PRESENTVSYNC);//use hardware and enable the present vsync
 
-    int dx = 0;
-    int dy = 0;
+    Snake snake(MAP_WIDTH >> 1,MAP_HEIGHT >> 1,Snake::Direction::right);//center and forward right
 
     int frame_count = 0;
 
@@ -35,16 +35,17 @@ int main(int argc,char *argv[]){
                     break;
                 case SDL_KEYDOWN:
                     if(event.key.keysym.scancode == SDL_SCANCODE_UP){//up arrow
-                        cout<<"up"<<endl;
+                        snake.set_direction(Snake::Direction::up);
                     }else if(event.key.keysym.scancode == SDL_SCANCODE_LEFT){//left arrow
-                        cout<<"left"<<endl;
+                        snake.set_direction(Snake::Direction::left);
                     }else if(event.key.keysym.scancode == SDL_SCANCODE_RIGHT){//right arrow
-                        cout<<"right"<<endl;
+                        snake.set_direction(Snake::Direction::right);
                     }else if(event.key.keysym.scancode == SDL_SCANCODE_DOWN){//down arrow
-                        cout<<"down"<<endl;
+                        snake.set_direction(Snake::Direction::down);
                     }else if(event.key.keysym.scancode == SDL_SCANCODE_ESCAPE){//esc
-                        cout<<"esc"<<endl;
                         is_quit = true;
+                    }else if(event.key.keysym.scancode == SDL_SCANCODE_SPACE){
+                        snake.increse_length();
                     }
                     break;
                 default:
@@ -52,19 +53,12 @@ int main(int argc,char *argv[]){
             }
         }
 
-
         if(frame_count == 10){
             frame_count = 0;
-            Map::instance().set(dx,dy,TileType::air);
-            if(++dx == MAP_WIDTH){
-                dx = 0;
-                if(++dy == MAP_HEIGHT){
-                    dy = 0;
-                }
+            if(snake.update()){//died
+                is_quit = true;
             }
-            Map::instance().set(dx,dy,TileType::wall);
         }
-
         ++frame_count;
 
         Map::instance().draw(renderer);
