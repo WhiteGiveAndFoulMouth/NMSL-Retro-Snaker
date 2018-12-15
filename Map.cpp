@@ -45,7 +45,13 @@ void Map::draw(SDL_Renderer *renderer)const noexcept{
                 SDL_RenderFillRect(renderer,&rect);
             }
             if(m_tiles[x][y] == TileType::fruit){
-                
+                SDL_SetRenderDrawColor(
+                        renderer,
+                        FRUIT_COLOR_RED,
+                        FRUIT_COLOR_GREEN,
+                        FRUIT_COLOR_BLUE,
+                        255);
+                SDL_RenderFillRect(renderer,&rect);
             }
         }
     }
