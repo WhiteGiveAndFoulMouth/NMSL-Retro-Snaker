@@ -15,7 +15,8 @@ set(CMAKE_CXX_FLAGS_RELEASE "$ENV{CXXFLAGS}  -Wall -O2 -std=c++17")
 set(SOURCE_FILE
         Map.cpp
         Snake.cpp
-        main.cpp)
+        main.cpp
+        Level.cpp)
 
 set(LINK_LIBS mingw32 SDL2main SDL2 SDL2_image)
 

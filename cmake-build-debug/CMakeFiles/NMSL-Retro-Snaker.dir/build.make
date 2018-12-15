@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\CLion 2018.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "E:\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\CLion 2018.3\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "E:\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\git\NMSL-Retro-Snaker
+CMAKE_SOURCE_DIR = C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\git\NMSL-Retro-Snaker\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/NMSL-Retro-Snaker.dir/depend.make
@@ -59,50 +59,65 @@ include CMakeFiles/NMSL-Retro-Snaker.dir/flags.make
 CMakeFiles/NMSL-Retro-Snaker.dir/Map.cpp.obj: CMakeFiles/NMSL-Retro-Snaker.dir/flags.make
 CMakeFiles/NMSL-Retro-Snaker.dir/Map.cpp.obj: CMakeFiles/NMSL-Retro-Snaker.dir/includes_CXX.rsp
 CMakeFiles/NMSL-Retro-Snaker.dir/Map.cpp.obj: ../Map.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/NMSL-Retro-Snaker.dir/Map.cpp.obj"
-	D:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NMSL-Retro-Snaker.dir\Map.cpp.obj -c D:\git\NMSL-Retro-Snaker\Map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/NMSL-Retro-Snaker.dir/Map.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NMSL-Retro-Snaker.dir\Map.cpp.obj -c C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\Map.cpp
 
 CMakeFiles/NMSL-Retro-Snaker.dir/Map.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NMSL-Retro-Snaker.dir/Map.cpp.i"
-	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\git\NMSL-Retro-Snaker\Map.cpp > CMakeFiles\NMSL-Retro-Snaker.dir\Map.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\Map.cpp > CMakeFiles\NMSL-Retro-Snaker.dir\Map.cpp.i
 
 CMakeFiles/NMSL-Retro-Snaker.dir/Map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NMSL-Retro-Snaker.dir/Map.cpp.s"
-	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\git\NMSL-Retro-Snaker\Map.cpp -o CMakeFiles\NMSL-Retro-Snaker.dir\Map.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\Map.cpp -o CMakeFiles\NMSL-Retro-Snaker.dir\Map.cpp.s
 
 CMakeFiles/NMSL-Retro-Snaker.dir/Snake.cpp.obj: CMakeFiles/NMSL-Retro-Snaker.dir/flags.make
 CMakeFiles/NMSL-Retro-Snaker.dir/Snake.cpp.obj: CMakeFiles/NMSL-Retro-Snaker.dir/includes_CXX.rsp
 CMakeFiles/NMSL-Retro-Snaker.dir/Snake.cpp.obj: ../Snake.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/NMSL-Retro-Snaker.dir/Snake.cpp.obj"
-	D:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NMSL-Retro-Snaker.dir\Snake.cpp.obj -c D:\git\NMSL-Retro-Snaker\Snake.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/NMSL-Retro-Snaker.dir/Snake.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NMSL-Retro-Snaker.dir\Snake.cpp.obj -c C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\Snake.cpp
 
 CMakeFiles/NMSL-Retro-Snaker.dir/Snake.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NMSL-Retro-Snaker.dir/Snake.cpp.i"
-	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\git\NMSL-Retro-Snaker\Snake.cpp > CMakeFiles\NMSL-Retro-Snaker.dir\Snake.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\Snake.cpp > CMakeFiles\NMSL-Retro-Snaker.dir\Snake.cpp.i
 
 CMakeFiles/NMSL-Retro-Snaker.dir/Snake.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NMSL-Retro-Snaker.dir/Snake.cpp.s"
-	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\git\NMSL-Retro-Snaker\Snake.cpp -o CMakeFiles\NMSL-Retro-Snaker.dir\Snake.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\Snake.cpp -o CMakeFiles\NMSL-Retro-Snaker.dir\Snake.cpp.s
 
 CMakeFiles/NMSL-Retro-Snaker.dir/main.cpp.obj: CMakeFiles/NMSL-Retro-Snaker.dir/flags.make
 CMakeFiles/NMSL-Retro-Snaker.dir/main.cpp.obj: CMakeFiles/NMSL-Retro-Snaker.dir/includes_CXX.rsp
 CMakeFiles/NMSL-Retro-Snaker.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\git\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/NMSL-Retro-Snaker.dir/main.cpp.obj"
-	D:\mingw64\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NMSL-Retro-Snaker.dir\main.cpp.obj -c D:\git\NMSL-Retro-Snaker\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/NMSL-Retro-Snaker.dir/main.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NMSL-Retro-Snaker.dir\main.cpp.obj -c C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\main.cpp
 
 CMakeFiles/NMSL-Retro-Snaker.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NMSL-Retro-Snaker.dir/main.cpp.i"
-	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\git\NMSL-Retro-Snaker\main.cpp > CMakeFiles\NMSL-Retro-Snaker.dir\main.cpp.i
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\main.cpp > CMakeFiles\NMSL-Retro-Snaker.dir\main.cpp.i
 
 CMakeFiles/NMSL-Retro-Snaker.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NMSL-Retro-Snaker.dir/main.cpp.s"
-	D:\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\git\NMSL-Retro-Snaker\main.cpp -o CMakeFiles\NMSL-Retro-Snaker.dir\main.cpp.s
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\main.cpp -o CMakeFiles\NMSL-Retro-Snaker.dir\main.cpp.s
+
+CMakeFiles/NMSL-Retro-Snaker.dir/Level.cpp.obj: CMakeFiles/NMSL-Retro-Snaker.dir/flags.make
+CMakeFiles/NMSL-Retro-Snaker.dir/Level.cpp.obj: CMakeFiles/NMSL-Retro-Snaker.dir/includes_CXX.rsp
+CMakeFiles/NMSL-Retro-Snaker.dir/Level.cpp.obj: ../Level.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/NMSL-Retro-Snaker.dir/Level.cpp.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\NMSL-Retro-Snaker.dir\Level.cpp.obj -c C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\Level.cpp
+
+CMakeFiles/NMSL-Retro-Snaker.dir/Level.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/NMSL-Retro-Snaker.dir/Level.cpp.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\Level.cpp > CMakeFiles\NMSL-Retro-Snaker.dir\Level.cpp.i
+
+CMakeFiles/NMSL-Retro-Snaker.dir/Level.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/NMSL-Retro-Snaker.dir/Level.cpp.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\Level.cpp -o CMakeFiles\NMSL-Retro-Snaker.dir\Level.cpp.s
 
 # Object files for target NMSL-Retro-Snaker
 NMSL__Retro__Snaker_OBJECTS = \
 "CMakeFiles/NMSL-Retro-Snaker.dir/Map.cpp.obj" \
 "CMakeFiles/NMSL-Retro-Snaker.dir/Snake.cpp.obj" \
-"CMakeFiles/NMSL-Retro-Snaker.dir/main.cpp.obj"
+"CMakeFiles/NMSL-Retro-Snaker.dir/main.cpp.obj" \
+"CMakeFiles/NMSL-Retro-Snaker.dir/Level.cpp.obj"
 
 # External object files for target NMSL-Retro-Snaker
 NMSL__Retro__Snaker_EXTERNAL_OBJECTS =
@@ -110,11 +125,12 @@ NMSL__Retro__Snaker_EXTERNAL_OBJECTS =
 NMSL-Retro-Snaker.exe: CMakeFiles/NMSL-Retro-Snaker.dir/Map.cpp.obj
 NMSL-Retro-Snaker.exe: CMakeFiles/NMSL-Retro-Snaker.dir/Snake.cpp.obj
 NMSL-Retro-Snaker.exe: CMakeFiles/NMSL-Retro-Snaker.dir/main.cpp.obj
+NMSL-Retro-Snaker.exe: CMakeFiles/NMSL-Retro-Snaker.dir/Level.cpp.obj
 NMSL-Retro-Snaker.exe: CMakeFiles/NMSL-Retro-Snaker.dir/build.make
 NMSL-Retro-Snaker.exe: CMakeFiles/NMSL-Retro-Snaker.dir/linklibs.rsp
 NMSL-Retro-Snaker.exe: CMakeFiles/NMSL-Retro-Snaker.dir/objects1.rsp
 NMSL-Retro-Snaker.exe: CMakeFiles/NMSL-Retro-Snaker.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\git\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable NMSL-Retro-Snaker.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable NMSL-Retro-Snaker.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\NMSL-Retro-Snaker.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +143,6 @@ CMakeFiles/NMSL-Retro-Snaker.dir/clean:
 .PHONY : CMakeFiles/NMSL-Retro-Snaker.dir/clean
 
 CMakeFiles/NMSL-Retro-Snaker.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\git\NMSL-Retro-Snaker D:\git\NMSL-Retro-Snaker D:\git\NMSL-Retro-Snaker\cmake-build-debug D:\git\NMSL-Retro-Snaker\cmake-build-debug D:\git\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles\NMSL-Retro-Snaker.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\cmake-build-debug C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\cmake-build-debug C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles\NMSL-Retro-Snaker.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/NMSL-Retro-Snaker.dir/depend
 
