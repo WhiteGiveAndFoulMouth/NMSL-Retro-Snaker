@@ -2,7 +2,9 @@
 #define _SNAKE_H_
 
 #include <list>
+#include "Config.h"
 #include "Map.h"
+#include "Fruit.h"
 
 class Snake{
 public:
@@ -12,11 +14,17 @@ public:
         up,
         down
     };
-    explicit Snake(int x,int y,Direction direction = Direction::right)
-        :m_incresed(false),
-         m_now_direction(direction),
-         m_last_direction(direction){
-         m_snake.emplace_back(x,y);
+
+    static Snake &instance()noexcept{
+        static Snake snake;
+        return snake;
+    }
+
+    Snake():m_incresed(false),
+            m_now_direction(Direction::right),
+            m_last_direction(Direction::right),
+            m_snake(){
+        m_snake.emplace_back(MAP_WIDTH >> 1, MAP_HEIGHT >> 1 );
     }
     Snake(const Snake &) = delete;
     Snake(Snake &&) = delete;
@@ -31,6 +39,8 @@ public:
     void set_direction(Direction direction);
     
     bool update(); //return true if died
+
+    void clear();
 protected:
 private:
     bool m_incresed;
