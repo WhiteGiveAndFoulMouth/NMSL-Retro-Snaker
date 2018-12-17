@@ -47,8 +47,8 @@ bool Snake::update(){
 
     if(x < 0) x = MAP_WIDTH - 1;
     if(x >= MAP_WIDTH) x = 0;
-    if(y < 0) y = MAP_WIDTH - 1;
-    if(y >= MAP_WIDTH) y = 0;
+    if(y < 0) y = MAP_HEIGHT - 1;
+    if(y >= MAP_HEIGHT) y = 0;
 
     for(auto &p:m_snake){
         if(Map::instance().get(p.first,p.second) == TileType::wall)continue;
@@ -60,6 +60,11 @@ bool Snake::update(){
     m_snake.emplace_front(x,y);
     if(Map::instance().get(m_snake.front().first,m_snake.front().second) == TileType::wall)
         return true;
+    if(Map::instance().get(m_snake.front().first,m_snake.front().second) == TileType::fruit){
+        increse_length();
+        Map::instance().set(m_snake.front().first,m_snake.front().second,TileType::air);
+        Fruit::generate();
+    }
 
 
     m_snake.erase(std::prev(m_snake.end()));
@@ -70,4 +75,8 @@ bool Snake::update(){
         Map::instance().set(itr->first,itr->second,TileType::snake);
     }
     return false;
+}
+
+void Snake::clear() {
+    m_snake.clear();
 }

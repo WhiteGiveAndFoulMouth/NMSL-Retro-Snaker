@@ -3,10 +3,15 @@
 #include "Config.h"
 #include "Map.h"
 #include "Snake.h"
+#include "Fruit.h"
+#include "Level.h"
+
 
 using namespace std;
 
 int main(int argc,char *argv[]){
+    srand(time(nullptr));
+
     SDL_Init(SDL_INIT_EVERYTHING);
 
     SDL_Window *window = SDL_CreateWindow(
@@ -17,9 +22,12 @@ int main(int argc,char *argv[]){
             SDL_WINDOW_SHOWN);
     SDL_Renderer *renderer = SDL_CreateRenderer(window,-1,SDL_RENDERER_ACCELERATED|SDL_RENDERER_PRESENTVSYNC);//use hardware and enable the present vsync
 
-    Snake snake(MAP_WIDTH >> 1,MAP_HEIGHT >> 1,Snake::Direction::right);//center and forward right
+    auto &snake = Snake::instance();
+    Fruit::generate();
 
     int frame_count = 0;
+
+    Level::genLevel1();
 
     bool is_quit = false;
     SDL_Event event;
@@ -53,7 +61,7 @@ int main(int argc,char *argv[]){
             }
         }
 
-        if(frame_count == 10){
+        if(frame_count == 5){
             frame_count = 0;
             if(snake.update()){//died
                 is_quit = true;

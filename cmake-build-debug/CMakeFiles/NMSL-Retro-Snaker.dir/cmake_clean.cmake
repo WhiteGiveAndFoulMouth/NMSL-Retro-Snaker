@@ -2,6 +2,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/NMSL-Retro-Snaker.dir/Map.cpp.obj"
   "CMakeFiles/NMSL-Retro-Snaker.dir/Snake.cpp.obj"
   "CMakeFiles/NMSL-Retro-Snaker.dir/main.cpp.obj"
+  "CMakeFiles/NMSL-Retro-Snaker.dir/Level.cpp.obj"
   "NMSL-Retro-Snaker.pdb"
   "NMSL-Retro-Snaker.exe"
   "NMSL-Retro-Snaker.exe.manifest"

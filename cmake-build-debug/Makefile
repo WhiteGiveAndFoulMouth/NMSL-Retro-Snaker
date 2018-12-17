@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\CLion 2018.3\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "E:\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\CLion 2018.3\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "E:\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = D:\git\NMSL-Retro-Snaker
+CMAKE_SOURCE_DIR = C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = D:\git\NMSL-Retro-Snaker\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = D:\git\NMSL-Retro-Snaker\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\CLion 2018.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"E:\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\CLion 2018.3\bin\cmake\win\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"E:\CLion 2018.2.5\bin\cmake\win\bin\cmake.exe" -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\git\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles D:\git\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\git\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\a1662\Documents\GitHub\NMSL-Retro-Snaker\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -121,6 +121,33 @@ NMSL-Retro-Snaker: cmake_check_build_system
 NMSL-Retro-Snaker/fast:
 	$(MAKE) -f CMakeFiles\NMSL-Retro-Snaker.dir\build.make CMakeFiles/NMSL-Retro-Snaker.dir/build
 .PHONY : NMSL-Retro-Snaker/fast
+
+Level.obj: Level.cpp.obj
+
+.PHONY : Level.obj
+
+# target to build an object file
+Level.cpp.obj:
+	$(MAKE) -f CMakeFiles\NMSL-Retro-Snaker.dir\build.make CMakeFiles/NMSL-Retro-Snaker.dir/Level.cpp.obj
+.PHONY : Level.cpp.obj
+
+Level.i: Level.cpp.i
+
+.PHONY : Level.i
+
+# target to preprocess a source file
+Level.cpp.i:
+	$(MAKE) -f CMakeFiles\NMSL-Retro-Snaker.dir\build.make CMakeFiles/NMSL-Retro-Snaker.dir/Level.cpp.i
+.PHONY : Level.cpp.i
+
+Level.s: Level.cpp.s
+
+.PHONY : Level.s
+
+# target to generate assembly for a file
+Level.cpp.s:
+	$(MAKE) -f CMakeFiles\NMSL-Retro-Snaker.dir\build.make CMakeFiles/NMSL-Retro-Snaker.dir/Level.cpp.s
+.PHONY : Level.cpp.s
 
 Map.obj: Map.cpp.obj
 
@@ -212,6 +239,9 @@ help:
 	@echo ... NMSL-Retro-Snaker
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Level.obj
+	@echo ... Level.i
+	@echo ... Level.s
 	@echo ... Map.obj
 	@echo ... Map.i
 	@echo ... Map.s
