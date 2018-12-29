@@ -22,12 +22,11 @@ int main(int argc,char *argv[]){
             SDL_WINDOW_SHOWN);
     SDL_Renderer *renderer = SDL_CreateRenderer(window,-1,SDL_RENDERER_ACCELERATED|SDL_RENDERER_PRESENTVSYNC);//use hardware and enable the present vsync
 
+    Level::genLevel1();
     auto &snake = Snake::instance();
     Fruit::generate();
 
     int frame_count = 0;
-
-    Level::genLevel1();
 
     bool is_quit = false;
     SDL_Event event;

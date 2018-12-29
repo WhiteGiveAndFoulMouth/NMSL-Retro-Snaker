@@ -1,6 +1,7 @@
 #ifndef NMSL_RETRO_SNAKER_FRUIT_H
 #define NMSL_RETRO_SNAKER_FRUIT_H
 
+#include <list>
 #include <utility>
 #include <stdlib.h>
 #include <time.h>
